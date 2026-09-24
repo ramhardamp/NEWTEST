@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧪  BSR Vault Self-Test"
+            android:textColor="@color/text_primary"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Runs safe read-only checks plus in-memory backup/crypto round-trips. Your real vault entries are not changed."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginBottom="14dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRunSelfTest"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="▶  Run Full Self-Test"
+            android:textAllCaps="false"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopySelfTest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="📋  Copy Report"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/tvSelfTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@color/surface1"
+            android:padding="14dp"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCloseSelfTest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="Close"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>
