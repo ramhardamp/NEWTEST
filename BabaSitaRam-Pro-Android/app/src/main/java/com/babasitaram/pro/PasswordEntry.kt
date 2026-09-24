@@ -1,8 +1,9 @@
 package com.babasitaram.pro
 
-/** Stored vault entry shared by the UI, audit and autofill code. */
+import java.util.UUID
+
 data class PasswordEntry(
-    val id: String = java.util.UUID.randomUUID().toString(),
+    val id: String = UUID.randomUUID().toString(),
     var site: String = "",
     var username: String = "",
     var password: String = "",
@@ -26,7 +27,7 @@ data class PasswordEntry(
     var totp: String = "",
     var folder: String = "",
     var tags: List<String>? = emptyList(),
-    var fields: List<CustomField?>? = emptyList(),
+    var fields: List<CustomField>? = emptyList(),
     var history: List<PasswordHistory>? = emptyList()
 )
 
